@@ -1,0 +1,15 @@
+[1] Config.pm:318> INFO - This is Biber 1.8
+[1] Config.pm:321> INFO - Logfile is 'doc.blg'
+[64] biber:275> INFO - === Wed May 20, 2015, 21:56:47
+[64] Biber.pm:333> INFO - Reading 'doc.bcf'
+[119] Biber.pm:630> INFO - Found 4 citekeys in bib section 0
+[132] Biber.pm:3053> INFO - Processing section 0
+[145] Biber.pm:3190> INFO - Looking for bibtex format file 'citations.bib' for section 0
+[147] bibtex.pm:808> INFO - Found BibTeX data source 'citations.bib'
+[148] Utils.pm:169> WARN - Datamodel: Entry 'NetWeb' (citations.bib): Invalid format '(n.d.)' of date field 'date' - ignoring
+[191] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[191] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
+[191] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[200] bbl.pm:482> INFO - Writing 'doc.bbl' with encoding 'ascii'
+[200] bbl.pm:555> INFO - Output to doc.bbl
+[200] Biber.pm:105> INFO - WARNINGS: 1

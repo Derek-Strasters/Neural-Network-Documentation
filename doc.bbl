@@ -1,0 +1,105 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{nty}
+    \entry{NetImg}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=5df1c088a7a16141d33b4d82a7e7f360}{Glosser.ca}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=5df1c088a7a16141d33b4d82a7e7f360}{Glosser.ca}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{5df1c088a7a16141d33b4d82a7e7f360}
+      \strng{fullhash}{5df1c088a7a16141d33b4d82a7e7f360}
+      \field{sortinit}{G}
+      \field{labeltitle}{Artificial neural network with layer coloring}
+      \field{day}{28}
+      \field{month}{02}
+      \field{title}{Artificial neural network with layer coloring}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg
+      \endverb
+    \endentry
+    \entry{NetWeb}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8eafc19decc9b6e1c045bf3ca06e7489}{Nielsen}{N\bibinitperiod}{Michael.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8eafc19decc9b6e1c045bf3ca06e7489}{Nielsen}{N\bibinitperiod}{Michael.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8eafc19decc9b6e1c045bf3ca06e7489}
+      \strng{fullhash}{8eafc19decc9b6e1c045bf3ca06e7489}
+      \field{sortinit}{N}
+      \field{labeltitle}{Neural Networks and Deep Learning.}
+      \field{title}{Neural Networks and Deep Learning.}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://neuralnetworksanddeeplearning.com/
+      \endverb
+      \warn{\item Datamodel: Entry 'NetWeb' (citations.bib): Invalid format '(n.d.)' of date field 'date' - ignoring}
+    \endentry
+    \entry{WikiCrtp}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=b7026c8ce5cacf5077cb3c8734a9ddef}{Wikipedia}{W\bibinitperiod}{In}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b7026c8ce5cacf5077cb3c8734a9ddef}{Wikipedia}{W\bibinitperiod}{In}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7026c8ce5cacf5077cb3c8734a9ddef}
+      \strng{fullhash}{b7026c8ce5cacf5077cb3c8734a9ddef}
+      \field{sortinit}{W}
+      \field{labeltitle}{Curiously Recurring Template Pattern.}
+      \field{title}{Curiously Recurring Template Pattern.}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern
+      \endverb
+    \endentry
+    \entry{WikiFrankRosenblatt}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=b7026c8ce5cacf5077cb3c8734a9ddef}{Wikipedia}{W\bibinitperiod}{In}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b7026c8ce5cacf5077cb3c8734a9ddef}{Wikipedia}{W\bibinitperiod}{In}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7026c8ce5cacf5077cb3c8734a9ddef}
+      \strng{fullhash}{b7026c8ce5cacf5077cb3c8734a9ddef}
+      \field{sortinit}{W}
+      \field{labeltitle}{Frank Rosenblatt}
+      \field{title}{Frank Rosenblatt}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://en.wikipedia.org/wiki/Frank_Rosenblatt
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

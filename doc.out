@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section.1}{Introduction to this Neural Network Architecture}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Preface}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{An Abstract Definition}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Backpropagation by Stochastic Gradient Descent}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.3.1}{The Sigmoid Neuron}{subsection.1.3}% 5
+\BOOKMARK [1][-]{section.2}{Header File | Neuron.h }{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Instantiable | class Neuron< >\(\) }{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Member Function | FuncSig GetActivationFct\(\) }{subsection.2.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Member Function | GetActivationFctPrime\(\) }{subsection.2.1}% 9
+\BOOKMARK [1][-]{section.3}{Header File | Utility.h }{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Instantiable | typedef double \(*FuncSig\)\(double z\) }{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Instantiable | class DownCast< >\(\) }{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Instantiable | struct CommAry< >\(\) }{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{Instantiable | CommAry's \040Printing Tools and Math Tools}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Instantiable | class RandTools\(\) }{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Source File | Utility.cpp }{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Member Functions of | class RandTools\(\) }{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Header File | DLog.h }{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Instantiable \040struct dbglog\(\) }{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Header File | Color.h }{}% 20
+\BOOKMARK [1][-]{section.7}{Header File | Layer.h }{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Instantiable \040class Layer< >\(\) }{section.7}% 22
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Member Function \040void Z\137Cascade\(\) }{subsection.7.1}% 23
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Member Function \040void Activation\(\) }{subsection.7.1}% 24
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Member Function \040void ErrorCascade\(\) }{subsection.7.1}% 25
+\BOOKMARK [3][-]{subsubsection.7.1.4}{Member Function \040void DescendGradiant\(\) }{subsection.7.1}% 26
+\BOOKMARK [1][-]{section.8}{Header File | Perceptron.h \040and \040Sigmoid.h }{}% 27
+\BOOKMARK [1][-]{section.9}{Header File | POSI.h }{}% 28
+\BOOKMARK [1][-]{section.10}{Source File | Alan.cpp }{}% 29
