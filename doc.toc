@@ -8,27 +8,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3}Backpropagation by Stochastic Gradient Descent}{4}{subsection.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.1}The Sigmoid Neuron}{4}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1}The Sigmoid Neuron}{5}{subsubsection.1.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Header File | {\fontfamily {lmtt}\fontseries {b}\selectfont Neuron.h} }{8}{section.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont class Neuron< >()} }{8}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Member Function | {\fontfamily {lmtt}\fontseries {b}\selectfont FuncSig GetActivationFct()} }{8}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Member Function | {\fontfamily {lmtt}\fontseries {b}\selectfont FuncSig GetActivationFct()} }{9}{subsubsection.2.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.2}Member Function | {\fontfamily {lmtt}\fontseries {b}\selectfont GetActivationFctPrime()} }{9}{subsubsection.2.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Header File | {\fontfamily {lmtt}\fontseries {b}\selectfont Utility.h} }{9}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont typedef double (*FuncSig)(double z)} }{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont typedef double (*FuncSig)(double z)} }{10}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont class DownCast< >()} }{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont class DownCast< >()} }{10}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont struct CommAry< >()} }{10}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont CommAry's} Printing Tools and Math Tools}{10}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont class RandTools()} }{10}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.5}Instantiable | {\fontfamily {lmtt}\fontseries {b}\selectfont class RandTools()} }{11}{subsection.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Source File | {\fontfamily {lmtt}\fontseries {b}\selectfont Utility.cpp} }{11}{section.4}
 \defcounter {refsection}{0}\relax 
@@ -36,7 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Header File | {\fontfamily {lmtt}\fontseries {b}\selectfont DLog.h} }{11}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Instantiable {\fontfamily {lmtt}\fontseries {b}\selectfont struct dbglog()} }{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.1}Instantiable {\fontfamily {lmtt}\fontseries {b}\selectfont struct dbglog()} }{12}{subsection.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Header File | {\fontfamily {lmtt}\fontseries {b}\selectfont Color.h} }{12}{section.6}
 \defcounter {refsection}{0}\relax 
@@ -48,9 +48,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.1.2}Member Function {\fontfamily {lmtt}\fontseries {b}\selectfont void Activation()} }{12}{subsubsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Member Function {\fontfamily {lmtt}\fontseries {b}\selectfont void ErrorCascade()} }{12}{subsubsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.3}Member Function {\fontfamily {lmtt}\fontseries {b}\selectfont void ErrorCascade()} }{13}{subsubsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.4}Member Function {\fontfamily {lmtt}\fontseries {b}\selectfont void DescendGradiant()} }{12}{subsubsection.7.1.4}
+\contentsline {subsubsection}{\numberline {7.1.4}Member Function {\fontfamily {lmtt}\fontseries {b}\selectfont void DescendGradiant()} }{13}{subsubsection.7.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Header File | {\fontfamily {lmtt}\fontseries {b}\selectfont Perceptron.h} and {\fontfamily {lmtt}\fontseries {b}\selectfont Sigmoid.h} }{13}{section.8}
 \defcounter {refsection}{0}\relax 

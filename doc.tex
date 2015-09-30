@@ -135,7 +135,7 @@
 
 \center
 
-\textsc{\LARGE Derek Strasters'}\\[1.5cm]
+\textsc{\LARGE Derek Strasters}\\[1.5cm]
 \textsc{\Large In Depth Documentations of a}\\[0.5cm]
 \textsc{\large Spring 2015}\\[0.5cm]
 
@@ -172,48 +172,53 @@ Derek \textsc{Strasters}
 %	INTRODUCTION / Section 1                                                             %
 %----------------------------------------------------------------------------------------%
  
-
-
 \section{Introduction to this Neural Network Architecture}
 
 \subsection{Preface}
 
-The Neural Net Architecture being presented here is built with the intention of providing another programmer with a
-broad set of tools for the creation of a Neural Net. To make this demonstration complete, there is within the project
-directory a source file named \texttt{Alan.cpp} (honouring one of the fathers of computer science, Alan Turing).
-Alan, compiles compiles into an executable interactive demonstration that is meant to offer somewhat of a visual
-observation on the inner workings of a neural network.  The demonstration shows just one of the most simple examples of
-the many exciting ways in which a user might make use of an architecture such as this to implement a Neural Network.
-It is my hope to continue to improve the user-friendliness, efficiency, and open-endedness with such goals as
+The Neural Net Architecture being presented here is built with the intention of providing other programmers with a
+broad set of tools for the creation of multipurpose Neural Networks. To complete the documentation, there is
+within the project directory a source file named \texttt{Alan.cpp} (honouring one of the fathers of computer science,
+Alan Turing). Alan, compiles compiles into an executable interactive demonstration that is meant to offer somewhat of a
+visual observation on the inner workings of a neural network.  The demonstration shows just one of the most simple
+examples of the many exciting ways in which a user might make use of an architecture such as this to implement a Neural
+Network. It is my hope to continue to improve the user-friendliness, efficiency, and open-endedness with such goals as
 implementing the OpenGL library to make use of the powerful video cards in most home computers, and full cross platform
-windowed user interface. There truly are innumerable possibilities for the uses of neural networks, and I think it would
-be just neat if we could make them as readily available to the world as perhaps an on-line calculator is now. This has
-been the main driving factor behind my attempt at a design that both leaves room for users to easily make modifications
-in places that are likely to be experimented with, while also maintaining a reasonably small number of easy to use
-classes and functions to handle the heavy computing that are designed with the intent to make it difficult for the user
-to introduce bugs by accident.
+windowed user interface. There truly are innumerable possibilities for the uses of neural networks, and I think it
+would be just neat if we could make them as readily available to the world as perhaps an on-line calculator is now.
+This has been the main driving factor behind my attempt at a design that both - leaves room for users to easily make
+modifications in places that are likely to be experimented with and tuned, while also maintaining a reasonably small
+number of easy to use classes and functions to handle the heavy computing.  All of which have been designed with the
+intent to make it difficult for the user to introduce bugs by accident.
 
 \subsection{An Abstract Definition}
 
-Before continuing, a brief explanation of what a neural net actually is, is in order.  My own source of understanding
-Neural Networks has come from a web book by Michael Nielsen whom I recommend to any
-interested readers interested in more information about neural networks \cite{NetWeb}. An interesting side point
-about his book, is that it's not even finished, he's publishing it as he goes.
+Before continuing, a brief explanations of what a neural net actually is and does, are in order.  My own source of
+understanding Neural Networks has come largely from the work of Michael Nielsen on his \textit{living} web book wherein
+he does a stand up job of introducing the structure of the neural network \cite{NetWeb}. I recommend his work to any
+interested readers in want of more information about neural networks.
+An interesting side point about his book, is that at the time of my writing this, it is not even finished.  Being a
+living book, he is publishing it incrementally as he goes.
 
-A neural network or, neural net, is so named because of it's (somewhat crude) semblance to the manner in which a brain's
-network of neurons work.  It is not, however, identical by any means.  In the shortest way of stating a neural nets
-function, it is a system that is capable of ``learning'' how to behave.  For example, in the demo implementation, a
-network is constructed and then ``shown'' some information.  At the same time, the network is also ``shown'' what
-outcome we want it to produce, and after we do this many times, we stop the so called training and can then present the 
-network a value it has never seen and hopefully it will have learned to respond in the way we have taught it.
+A neural network or, neural net, is so named because of it's (albeit somewhat crude) semblance to the manner in which a
+brain's network of neurons function.  It is not, however, an identical analog by any means.  In the shortest way of
+stating a neural network's function: it is a system that is capable of ``learning'' how to behave.  For example, in the
+demo implementation, a network is constructed and then ``shown'' some information in the form of a string of numbers. 
+At the same time, the network is also ``shown'' what outcome we want it to produce, and after we do this many times, we
+stop the so called training and can then present the network a value it has never seen and hopefully it will have
+learned to respond in the way we have taught it.  Note the use of the word ``shown''.  This is part of a pattern of
+cute brain analogies that seems to be endemic to the field, as we shall see soon the array that does the ``seeing'' is
+typically named the retina, after our own high speed arrays of information throughput pipelines located at the backs of
+our eyeballs.
 
-Now this may sound at the surface like a really inefficient way of doing nothing more complicated than regurgitating
-values from some kind of look up table of recorded values.  The thing that makes this type of system so much more
-special than trivial behaviour of a look up table is that you can then show the network some data it has never been
-exposed to before and if that data follows some pattern, even a pattern that we ourselves are unaware of, it is very
-likely going to output the correct response to that new data.  It's a matter of interpretation, but this student finds
-such behavior to be moving the idea of a computer that could arguably said to ``think'' is arriving in a much
-\emph{less} distant future.
+Now, the idea of a machine that learns to respond to number sequences with a list of other ``learned'' number sequences
+may sound at the surface like a really inefficient way of doing nothing more complicated than regurgitating values from
+some kind of look up table of recorded values.  The thing that makes this type of system so much more special than
+trivial behaviour of a look up table is that you can then show the network some data it has never been exposed to
+before and if that data follows some pattern, even a pattern that we ourselves are unaware of, it is very likely going
+to output the correct response to that new data.  It's a matter of interpretation, but this student finds such behavior
+to be moving the idea of a computer that could arguably said to ``think'' is arriving in a much \emph{less} distant
+future.
 
 \subsection{Backpropagation by Stochastic Gradient Descent}
 
@@ -224,7 +229,7 @@ from other neurons that it is linked to. These neurons have the capability of re
 neuron simply does \emph{something} with those values to generate it's output. It is unsurprising that most of the
 neurons will be taking the outputs of other many other neurons as input. Knowing nothing more than what has been stated
 - \textit{\ldots a semblance to the manner in which a brain's network of neurons work,} - and that each neuron accepts
-the ouputs from many other neurons, it then seems reasonable to expect that each neuron has a way in which to grant
+the outputs from many other neurons, it then seems reasonable to expect that each neuron has a way in which to grant
 greater weight to some inputs and less weight to others. The way in which this concept is implemented in this type of
 Neural Network is for each neuron to keep a simple scalar for each of it's inputs.  These scalars are aptly called the
 neuron's \textmd{weights}.  To use the brain analogy, the neuron's \textbf{weights} strengthen or weaken the synapses
